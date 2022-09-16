@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; font-weight: 100;
+}
+body {
+  position: relative;
+  width: 100%; height: 100%;
+  background-color: rgb(245,245,245);
+  overflow-x: hidden;
+}
+button {
+  width:50%;
+  padding:5px;
+  background: rgb(55, 225, 210);
+  color:#FFFFFF;
+  border:none;
+  border-radius:5px;
+  font-weight:700;
+  cursor:pointer;
+  transition:all 300ms ease-in-out;
+  &:hover {
+    background: rgb(245, 60, 70);
+  }
+  &:active {
+    transform:translate(0px, 2px);
+  }
+}

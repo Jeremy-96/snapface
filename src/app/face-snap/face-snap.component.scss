@@ -1,0 +1,26 @@
+.face-snap__card {
+  width: 30%; height: 150px;
+  display: flex; align-items:flex-start; justify-content: space-around; flex-direction:column;
+  padding-left: 25px;
+  line-height: 25px;
+  border-radius:10px;
+  margin:25px 0 25px 0;
+  box-shadow: 0 0 10px lightgray;
+  background-color: #FFFFFF;
+  .title, .description {
+    width:90%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    text-align:left;
+  }
+  .title {
+    font-weight:400;
+  }
+  button {
+    width: 25%;
+  }
+}
+
+
+
