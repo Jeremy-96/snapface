@@ -1,0 +1,75 @@
+.form__card {
+  width: 60%; height: 600px;
+  display:flex; flex-direction:column; align-items:center; justify-content: center;
+  box-shadow: 0 0 20px lightgray;
+  border: none;
+  border-radius: 20px;
+  background-color:#FFFFFF;
+  &__title {
+    width:90%; height:10%;
+    text-align: center;
+  }
+  &__form {
+    width:90%; height:80%;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+    .form__group, .actions__submit {
+      width:100%; height:20%;
+      display: flex; flex-direction:column; align-items:center; justify-content: flex-start;
+    }
+  }
+}
+.face-snap__card {
+  width:30%;
+  height:500px;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:column;
+  line-height: 25px;
+  border-radius:10px;
+  margin:25px 0 25px 0;
+  box-shadow: 0 0 10px lightgray;
+  background-color: #FFFFFF;
+  .title, .description, .online, .location {
+    width:90%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    text-align:left;
+  }
+  .title {
+    font-weight:400;
+    justify-content: center;
+  }
+  .img {
+    width:90%;
+    height:150px;
+    object-fit: cover;
+  }
+  .snaps{
+    width:90%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    &__btn {
+      width:50%;
+      padding:5px;
+      background: rgb(55, 225, 210);
+      color:#FFFFFF;
+      border:none;
+      border-radius:5px;
+      font-weight:700;
+      cursor:pointer;
+      transition:all 300ms ease-in-out;
+      &:hover {
+        background: rgb(245, 60, 70);
+      }
+      &:active {
+        transform:translate(0px, 2px);
+      }
+    }
+    &__value {
+      font-weight:400;
+    }
+  }
+}
