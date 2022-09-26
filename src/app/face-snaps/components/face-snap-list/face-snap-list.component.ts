@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
-import { FaceSnap } from '../models/face-snap.models';
-import { FaceSnapsService } from '../services/face-snaps.services';
+import { FaceSnap } from 'src/app/core/models/face-snap.models';
+import { FaceSnapsService } from 'src/app/core/services/face-snaps.services';
 
 @Component({
   selector: 'app-face-snap-list',

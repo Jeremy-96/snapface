@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -14,7 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onAddNewFaceSnap(): void {
-    this.router.navigateByUrl('/create');
+    this.router.navigateByUrl('facesnaps/create');
   }
-
 }

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import { FaceSnap } from '../models/face-snap.models';
-import { FaceSnapsService } from '../services/face-snaps.services';
+import { FaceSnap } from 'src/app/core/models/face-snap.models';
+import { FaceSnapsService } from 'src/app/core/services/face-snaps.services';
 
 @Component({
   selector: 'app-single-face-snap',
@@ -13,6 +13,10 @@ import { FaceSnapsService } from '../services/face-snaps.services';
 export class SingleFaceSnapComponent implements OnInit {
   faceSnap$!: Observable<FaceSnap>;
   btnTxt!: string;
+
+
+  name = 'John Doe';
+  show = true;
 
   constructor(private faceSnapsService: FaceSnapsService,
               private route: ActivatedRoute) {}
